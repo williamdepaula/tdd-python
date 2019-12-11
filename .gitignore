@@ -1,1 +1,5 @@
-venv
+venv/
+.idea/
+__pycache__/
+geckodriver.log
+db.sqlite3
