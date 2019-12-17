@@ -16,7 +16,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # Ela percebe que o titulo da página e o cabeçalho mencionam
         # lista de tarefas (to-do)
-        self.assertIn('Tod-Do', self.browser.title)
+        self.assertIn('To-Do', self.browser.title)
         self.fail('Finish the test!')
 
         # Ela é convidade a inserir um item de tarefa imediatamente
