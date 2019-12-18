@@ -26,7 +26,7 @@ class NewVisitorTest(unittest.TestCase):
         inputbox = self.browser.find_element_by_id('id_new_item')
         self.assertEqual(
             inputbox.get_attribute('placeholder'),
-            'Enter a to-do item'
+            'Entre com um to-do item'
         )
 
         # Ela digita "Comprar penas de pavão" em uma caixa de
@@ -39,9 +39,9 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
 
         table = self.browser.find_element_by_id('id_list_table')
-        rows = table.find_element_by_tag_name('tr')
+        rows = table.find_elements_by_tag_name('tr')
         self.assertTrue(
-            any(row.text == '1: Comprar penas de pavão' for row in rows)
+            any(row.text == '1: Comprar penas de pavão' for row in rows), "Novo item to-do não aparece na tabela"
         )
 
         # Ainda continua havendo uma caixa de texto convidando-a a acrescentar outro item.
