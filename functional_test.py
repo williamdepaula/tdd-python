@@ -63,6 +63,8 @@ class NewVisitorTest(unittest.TestCase):
 
         # Edith se pergunta se o site lembrará de sua lista. Então ela nota que o site
         # gerou um URL único para ela -- há um pequeno texto explicativo para isso.
+
+        # TODO: Aceitar mais de uma lista
         self.fail('Finish the test!')
 
 
