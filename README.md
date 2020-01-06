@@ -4,6 +4,12 @@
 
 Implementação dos exemplos do Livro.
 
+## Instalando o Geckodriver
+Os testes rodam no firefox e utilizam o geckodriver para executar corretamente.
+Baixe o geckodriver [https://github.com/mozilla/geckodriver/releases]
+descompacte e mova o arquivo geckodriver para um local dentro do PATH para que seja executado corretamente.
+~/.local/bin
+
 ## Comandos Uteis
 
 Para executar todos os testes
